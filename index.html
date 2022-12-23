@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ポケモン努力値計算ツール</h1>
+      <h3>くすり、ハネ、野生のすべての組み合わせから必要な数を計算します。</h3>
+    </header>
+    <main>
+      <div class="main-wrapper">
+        <div class="left-wrapper">
+          <form action="">
+            <div class="input-wrapper">
+              <div class="input-item">
+                <label for="hitpoint">HP</label>
+                <div class="spinner-container">
+                  <span class="spinner-sub disabled">-</span>
+                  <input
+                    type="number"
+                    class="spinner"
+                    min="0"
+                    max="255"
+                    value="0"
+                  />
+                  <span class="spinner-add">+</span>
+                </div>
+              </div>
+              <div class="input-item">
+                <label for="attack">こうげき</label>
+                <div class="spinner-container">
+                  <span class="spinner-sub disabled">-</span>
+                  <input
+                    type="number"
+                    class="spinner"
+                    min="0"
+                    max="255"
+                    value="0"
+                  />
+                  <span class="spinner-add">+</span>
+                </div>
+              </div>
+              <div class="input-item">
+                <label for="defense">ぼうぎょ</label>
+                <div class="spinner-container">
+                  <span class="spinner-sub disabled">-</span>
+                  <input
+                    type="number"
+                    class="spinner"
+                    min="0"
+                    max="255"
+                    value="0"
+                  />
+                  <span class="spinner-add">+</span>
+                </div>
+              </div>
+              <div class="input-item">
+                <label for="sp-attack">とくこう</label>
+                <div class="spinner-container">
+                  <span class="spinner-sub disabled">-</span>
+                  <input
+                    type="number"
+                    class="spinner"
+                    min="0"
+                    max="255"
+                    value="0"
+                  />
+                  <span class="spinner-add">+</span>
+                </div>
+              </div>
+              <div class="input-item">
+                <label for="sp-defense">とくぼう</label>
+                <div class="spinner-container">
+                  <span class="spinner-sub disabled">-</span>
+                  <input
+                    type="number"
+                    class="spinner"
+                    min="0"
+                    max="255"
+                    value="0"
+                  />
+                  <span class="spinner-add">+</span>
+                </div>
+              </div>
+              <div class="input-item">
+                <label for="speed">すばやさ</label>
+                <div class="spinner-container">
+                  <span class="spinner-sub disabled">-</span>
+                  <input
+                    type="number"
+                    class="spinner"
+                    min="0"
+                    max="255"
+                    value="0"
+                  />
+                  <span class="spinner-add">+</span>
+                </div>
+              </div>
+              <div class="btn-wrapper">
+                <button type="submit">計算</button>
+                <button>リセット</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="right-wrapper">
+          <div class="chk-wrapper">
+            <div class="chk-item">
+              <label for="">やせいのポケモンをたおす</label>
+              <input type="checkbox" name="" id="" />
+            </div>
+            <div class="chk-item">
+              <label for="">ハネを使用</label>
+              <input type="checkbox" name="" id="" />
+            </div>
+            <div class="chk-item">
+              <label for="">ドーピングアイテムを使用</label>
+              <input type="checkbox" name="" id="" />
+            </div>
+            <div class="chk-item">
+              <label for="">パワー系アイテムを使用</label>
+              <input type="checkbox" name="" id="" />
+            </div>
+          </div>
+          <div class="table-wrapper"></div>
+          <div class="counter-wrapper">
+            <div class="count-item">
+              <button>カウント</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
