@@ -1,5 +1,4 @@
 // spinner
-
 $(function() {
   $('.spinner').each(function() {
     var el  = $(this);
